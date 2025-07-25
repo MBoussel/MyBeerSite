@@ -18,4 +18,4 @@ Navigation simple entre deux pages
 
 Récupération et affichage de données via une API publique
 
-Organisation du code de façon claire et réutilisable
+Code écrit avec TypeScript
