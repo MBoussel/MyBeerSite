@@ -1,54 +1,21 @@
-# React + TypeScript + Vite
+🍻 MyBeerSite
+Objectif du projet :
+Construire une webapp dynamique qui utilise des données provenant d'une API en une journée.
+C'était la première fois que je faisais un appel à une API dans un projet React.
+Ce projet m’a permis de comprendre les bases de l’intégration d’API, la gestion de la navigation, et l’organisation d’une app React sous contrainte de temps (deadline d’une journée).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Compétences et outils mobilisés :
+⚛️ React pour construire l’interface
 
-Currently, two official plugins are available:
+🧭 React Router pour créer deux pages : Accueil et À propos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 Fetch pour consommer une API de bières
 
-## Expanding the ESLint configuration
+🕒 Gestion du temps : projet réalisé en une seule journée
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Fonctionnalités :
+Navigation simple entre deux pages
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Récupération et affichage de données via une API publique
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Organisation du code de façon claire et réutilisable
